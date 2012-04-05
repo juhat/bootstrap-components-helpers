@@ -5,9 +5,12 @@ require "bootstrap-components-helpers/version"
 Gem::Specification.new do |s|
   s.name        = "bootstrap-components-helpers"
   s.version     = Bootstrap::Components::Helpers::VERSION
+
   s.authors     = ["Attila Juhász"]
   s.email       = ["juhasz@atti.la"]
+
   s.homepage    = "https://github.com/juhat/bootstrap-components-helpers"
+
   s.summary     = "Rails helpers for Twitter Bootstrap components"
   s.description = "Bootstrap is ideal for prototyping. This helpers make your views more clean during that way."
 
@@ -21,4 +24,10 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
+  
+  s.require_paths = ["lib"]  
+  
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rdoc', ">= 3.10"
+  s.add_development_dependency 'flexmock'
 end

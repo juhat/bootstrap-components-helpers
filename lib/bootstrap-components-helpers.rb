@@ -1,9 +1,7 @@
 require "bootstrap-components-helpers/version"
 
-module Bootstrap
-  module Components
-    module Helpers
-      # Your code goes here...
-    end
+module BootstrapComponentsHelpers
+  def button(text)
+    content_tag(:button, text, :type => :submit)
   end
 end
